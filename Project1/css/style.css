@@ -1,0 +1,28 @@
+*{
+	font-family: 'Lato', sans-serif;
+	color: #747777;
+}
+
+.logo-sizing{
+	max-width: 25%;
+}
+
+.font-thin{
+	font-weight: 200;
+}
+
+.font-weight{
+	font-size: 60px;
+}
+
+.workTitle{
+	color: #bcbbbb;
+}
+
+.topSpacing{
+	margin-top: 20px;
+}
+
+hr{
+	border: 2px solid #bcbbbb;
+}
