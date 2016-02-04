@@ -1,28 +1,32 @@
-*{
-	font-family: 'Lato', sans-serif;
-	color: #747777;
+* {
+    font-family: 'Lato', sans-serif;
+		color: #252525;
 }
 
-.logo-sizing{
-	max-width: 25%;
+.logo-sizing {
+    max-width: 25%;
 }
 
-.font-thin{
-	font-weight: 200;
+.font-thin {
+    font-weight: 200;
 }
 
-.font-weight{
-	font-size: 60px;
+.font-weight {
+    font-size: 60px;
 }
 
-.workTitle{
-	color: #bcbbbb;
+.text-Color{
+		color: #bcbbbb;
 }
 
-.topSpacing{
-	margin-top: 20px;
+.top-Spacing {
+    margin-top: 20px;
 }
 
-hr{
-	border: 2px solid #bcbbbb;
+hr {
+    border: 2px solid #bcbbbb;
+}
+
+.border{
+	border: 1px solid #bcbbbb;
 }
