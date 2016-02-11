@@ -25,7 +25,6 @@ ul {
   margin: 0;
 }
 
-
 /*
  *
  * Common
@@ -264,9 +263,11 @@ main {
  */
 
 .weather {
-  float: right;
+  float: left;
   width: 100%;
   padding: 1em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #E0E0E0;
 }
 
 .weather__location {
@@ -371,3 +372,97 @@ footer a {
   text-decoration: none;
   color: #333;
 }
+
+/*
+ *
+ *Breakpoints
+ *
+ */
+
+ @media screen and (max-width: 340px){
+	 .header__title{
+		 font-size: 2em;
+		 align-content: center;
+	 }
+	 
+	 .nav__item{
+		 padding: 24px 0;
+	 }
+ }
+ @media screen and (max-width: 370px){
+	 .header__logo{
+		 height: 62px;
+	 }
+	 
+	 .header_title{
+		 font-size: 2.5em;
+	 }
+ }
+ 
+ @media screen and (min-width: 322px) and (max-width: 539px){	 
+	 .header_logo{
+		 vertical-align: middle;
+		 margin-right: 0;
+	 }
+	 
+	 .header__title{
+		 font-size: 2.7em;
+		 margin-left: 0;
+		 margin-right: 0;
+		 margin-top: 0.7em;
+	 } 
+ }
+ 
+ @media screen and (min-width: 645px) and (max-width: 839px){
+	 .content{
+		 display: flex;
+		 flex-wrap: wrap;
+	 }
+	 
+	 .top-news {
+		 width: 50%;
+	 }
+	 
+	 .scores{
+		 width: 100%;
+	 }
+	 
+	 .weather {
+		 width: 50%;
+		 border: none;
+	 }
+ }
+ 
+ @media screen and (min-width: 840px){
+	 .content{
+		 display: flex;
+		 flex-wrap: wrap;
+	 }
+	 
+	 .nav a{
+		 padding: 3.5em;
+	 }
+	 
+	 .hero{
+		 width: 60%;
+	 }
+	 
+	 .top-news {
+		 width: 40%;
+	 }
+	 
+	 .scores{
+		 width: 40%;
+	 }
+	 
+	 .weather {
+		 width: 60%;
+		 border: none;
+	 }
+ }
+ @media screen and (min-width: 960px){
+	 body{
+		 width: 940px;
+		 margin: 0 auto;
+	 }
+ }
