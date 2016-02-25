@@ -7,7 +7,9 @@ var bio = {
 	"role": "Web Developer",
 	"contact": {
 		"email": "crsmejia93@gmail.com",
-		"phone": "(240)392-0100"
+		"phone": "(240)392-0100",
+		"github": "crsmejia93",
+		"linkedin": "cesar-mejia-6114a1aa"
 	},
 	"bioPic": "images/my_picture.jpg",
 	"skills": ["HTML", "CSS", "JavaScript", "Java", "Wordpress"]
@@ -64,9 +66,17 @@ var projects = {
 	}
  ]
 }
-
+//CONTACT INFORMATION-----------------------------------------------
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 $("#header").append(formattedBioPic);
+var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
+$("#header").append(formattedEmail);
+var formattedPhone = HTMLmobile.replace("%data%", bio.contact.phone);
+$("#header").append(formattedPhone);
+var formattedgit = HTMLgithub.replace("%data%", bio.contact.github);
+$("#header").append(formattedgit);
+var formattedlinkedin = HTMLlinkedin.replace("%data%", bio.contact.linkedin);
+$("#header").append(formattedlinkedin);
 
 if(bio.skills.length > 0){
 	//create the <ul> (id=skills), defined by helper.js
@@ -104,5 +114,7 @@ function displayWork(){
 displayWork();
 
 $(document).click(function(){
-	
+	var x = event.pageX;
+	var y = event.pageY;
+	logClicks(x,y);
 });
