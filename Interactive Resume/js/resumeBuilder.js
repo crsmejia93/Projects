@@ -82,7 +82,8 @@ if(bio.skills.length > 0){
 	$("#skills").append(formattedSkill);
 }
 
-for(job in work.jobs){
+function displayWork(){
+	for(job in work.jobs){
 		//creates the work <div>
 		$("#workExperience").append(HTMLworkStart);
 		//formats and concatenates job's employer - title to #workExperience
@@ -97,7 +98,11 @@ for(job in work.jobs){
 		$(".work-entry:last").append(formattedDate);
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 		$(".work-entry:last").append(formattedDescription);
+	}
+}
 
+displayWork();
 
-
-
+$(document).click(function(){
+	
+});
